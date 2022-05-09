@@ -1,0 +1,75 @@
+{
+	"info": {
+		"_postman_id": "cea187e3-e70a-4795-98ea-53231a912b94",
+		"name": "Noice technical",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Retrieve or Create",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/value?key=firstKey",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"value"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "firstKey"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List all data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/values",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"values"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "http://localhost:8000"
+		}
+	]
+}
